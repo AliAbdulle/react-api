@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import NewsSingle from './NewsSingle';
+import NewSingle from './NewsSingle';
 
 class News extends Component {
     renderItems() {
         return this.props.item.map((item) => {
-            <NewsSingle key={item.id} item={item} />
+            <NewSingle key={item.id} item={item} />
         })
     }
     render() {
