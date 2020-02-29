@@ -1,6 +1,7 @@
 import React from 'react';
 
 const newSingle = ({item}) => (  
+    //create cards
     <div className='col s4'>
         <div className="card">
             <div className="card-image">
