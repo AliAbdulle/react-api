@@ -8,11 +8,11 @@ class App extends Component {
     this.state = {
       news1: {
         type: 'top-headlines',
-        query: 'sources=bbc-news'
+        country: 'us'
       },
       news2: {
         type: 'everything',
-        query: 'domains=wsj.com,nytimes.com'
+        query: 'dapple&from=2020-02-28&to=2020-02-28&sortBy=popularity'
       }
     };
   }

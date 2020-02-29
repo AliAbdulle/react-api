@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
 import NewSingle from './NewSingle';
 
+const type = "top-headlines";
+const country = "us";
+
 class News extends Component {
     constructor(props) {
         super(props);
-        this.state ={
+        this.state = {
             news: [],
         }
     }
 
-    componentWillMount() {
-        const url =` http://newsapi.org/v2/${this.props.news.type}?${this.props.news.query}&apiKey=11d2c66f6cf0407481155a121f0a198a`;
+    componentDidMount() {
+        const url =`http://newsapi.org/v2/${type}?country=${country}&apiKey=11d2c66f6cf0407481155a121f0a198a`;
 
         fetch(url)
         .then((response) => {
