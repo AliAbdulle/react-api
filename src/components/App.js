@@ -7,26 +7,27 @@ class App extends Component {
     super(props);
     this.state = {
       news1: {
-        type: 'top-headline',
-        query: 'source=bbc-news'
+        type: 'top-headlines',
+        query: 'sources=bbc-news'
       },
-      news1: {
+      news2: {
         type: 'everything',
-        query: 'domins=techcrunch.com&language=en'
+        query: 'domains=techcrunch.com&language=en'
       }
     };
   }
 
   render() {
-    return (
-      <div className="App" >
-        <header className="App-header">
-          <h1 className="App-title">My News Feeds</h1>
-        </header>
-        <News />
-      </div>
-    );
-  }
+  return(
+    <div className="App" >
+      <header className="App-header">
+        <h1 className="App-title">My News Feeds</h1>
+      </header>
+      <News news={this.state.news1} />
+      <News news={this.state.new2} />
+    </div>
+  );
+}
 }
 
 export default App;
