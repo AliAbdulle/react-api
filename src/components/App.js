@@ -12,7 +12,7 @@ class App extends Component {
       },
       news2: {
         type: 'everything',
-        query: 'domains=techcrunch.com&language=en'
+        query: 'domains=wsj.com,nytimes.com'
       }
     };
   }

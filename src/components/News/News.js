@@ -3,14 +3,14 @@ import NewSingle from './NewSingle';
 
 class News extends Component {
     constructor(props) {
-        super(props)
+        super(props);
         this.state ={
             news: [],
         }
     }
 
     componentWillMount() {
-        const url = `http://newsapi.org/v2/${this.props.news.type}?${this.props.news.query}&apiKey=11d2c66f6cf0407481155a121f0a198a`;
+        const url =` http://newsapi.org/v2/${this.props.news.type}?${this.props.news.query}&apiKey=11d2c66f6cf0407481155a121f0a198a`;
 
         fetch(url)
         .then((response) => {
