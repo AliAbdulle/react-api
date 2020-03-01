@@ -3,6 +3,7 @@ import './App.css';
 import News from './News/News';
 
 class App extends Component {
+  // Construtor
   constructor(props) {
     super(props);
     this.state = {
