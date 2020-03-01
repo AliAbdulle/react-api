@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import NewSingle from './NewSingle';
-import NewSingle from'./NewSingle.css';
+// import NewSingle from'./NewSingle.css';
 
 const type = "top-headlines";
 const country = "us";

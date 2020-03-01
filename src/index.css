@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.card_image {
+  height:fit-content;
+  width: auto;
+  object-fit: cover;
+}
