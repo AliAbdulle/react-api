@@ -20,4 +20,5 @@ code {
   height: 33%;
   width: 95%;
   object-fit: cover;
+  position: absolute;
 }
