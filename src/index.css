@@ -11,14 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.card_image {
-  height: auto;
+/* .card_image {
+  height: 10px;
   width: auto;
   object-fit: cover;
 }
 .card{
-  height: 33%;
+  height: 10%;
   width: 95%;
   object-fit: cover;
   position: absolute;
-}
+} */
