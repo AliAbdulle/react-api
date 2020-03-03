@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import News from './News/News';
+import sidenews from './News/Sidenews';
 
 class App extends Component {
   // Construtor
