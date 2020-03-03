@@ -17,18 +17,27 @@ class App extends Component {
       }
     };
   }
-// render files
+  // render files
   render() {
-  return(
-    <div className="App" >
-      <header className="App-header">
-        <h1 className="App-title">My News Feeds</h1>
-      </header>
-      <News news={this.state.news1} />
-      <News news={this.state.new2} />
-    </div>
-  );
-}
+    return (
+      <div className="container-fluid" >
+        <div className="navbar-fix">
+          <div className="nav-wrapper indigo lighten-4">
+            <a href="#" className="brain-logo center">My Feed</a>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col s8">
+            <News news={this.state.news1} />
+            <News news={this.state.new2} />
+          </div>
+          <div className="col s4">
+            <sidenews />
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
