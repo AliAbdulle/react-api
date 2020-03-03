@@ -20,16 +20,16 @@ class Sidenews extends Component {
 
     renderItems() {
         return this.state.news.map((item) => (        
-                <NewSingle key={item.url} item={item} />
+                <Singleside key={item.url} item={item} />
         ))
     }
     render() {
         return (
-            <div className="row">
+            <div>
                 {this.renderItems()}
             </div>
         )
     }
 }
 
-export default News;
+export default Sidenews;
