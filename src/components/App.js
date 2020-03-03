@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import News from './News/News';
-import sidenews from './News/Sidenews';
+import Sidenews from './News/Sidenews';
 
 class App extends Component {
   // Construtor
@@ -37,7 +37,7 @@ class App extends Component {
             <News news={this.state.new2} />
           </div>
           <div className="col s4">
-            <sidenews news3={this.state.news3} />
+            <Sidenews news3={this.state.news3} />
           </div>
         </div>
       </div>
