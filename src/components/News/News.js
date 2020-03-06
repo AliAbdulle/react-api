@@ -47,6 +47,8 @@ class News extends Component {
             return <Error />
         }
     }
+
+    //render files
     render() {
         return (
             <div className="row">
