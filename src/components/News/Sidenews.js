@@ -18,6 +18,7 @@ class Sidenews extends Component {
     }
 
     componentDidMount() {
+        //fetch run a side components
         const url = `http://newsapi.org/v2/${type}?country=${country}&apiKey=11d2c66f6cf0407481155a121f0a198a`;
 
         axios.get(url)
