@@ -16,6 +16,7 @@ class News extends Component {
     }
 
     componentDidMount() {
+        //fetch the api
         const url =`http://newsapi.org/v2/${type}?country=${country}&apiKey=11d2c66f6cf0407481155a121f0a198a`;
 
         fetch(url)
